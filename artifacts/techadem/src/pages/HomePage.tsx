@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Loved by Nigerian Learners</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Loved by Beginner Learners</h2>
             <p className="text-foreground/70 text-lg">Join hundreds of students taking their first steps in tech.</p>
           </div>
           

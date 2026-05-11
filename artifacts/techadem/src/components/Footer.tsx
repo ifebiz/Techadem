@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Lagos, Nigeria</li>
+              <li>Ife, Nigeria</li>
               <li>support@techadem.com</li>
             </ul>
           </div>
