@@ -7,9 +7,9 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <span className="font-display font-bold text-2xl tracking-tight text-white flex items-center mb-4">
-              TechadeM
-            </span>
+            <div className="overflow-hidden mb-4" style={{width: 180, height: 54}}>
+              <img src="/logo.png" alt="Techadem" className="w-full h-full object-contain" />
+            </div>
             <p className="text-white/70 max-w-xs text-sm leading-relaxed">
               Beginner-friendly video lessons in Data Analysis and Cybersecurity designed to help you start your tech journey the right way.
             </p>
