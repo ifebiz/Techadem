@@ -10,48 +10,48 @@ const days = [
   {
     id: "day-1",
     dayNumber: 1,
-    title: "Day One: What Cybersecurity Is and Why It Matters",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day One: Get Into Cybersecurity With No Experience",
+    videoUrl: "https://go.screenpal.com/player/cOh1bbnth9i",
     encouragementText:
       "Well done for completing Day 1. Most people never even start. You have taken the first step.",
   },
   {
     id: "day-2",
     dayNumber: 2,
-    title: "Day Two: Common Security Threats and How They Work",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day Two: Cybersecurity Fundamentals",
+    videoUrl: "https://go.screenpal.com/player/cOh1b8nt1no",
     encouragementText:
       "You are building momentum. Try not to skip days. Consistency is key.",
   },
   {
     id: "day-3",
     dayNumber: 3,
-    title: "Day Three: Tools Used in Cybersecurity",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day Three: Core Security Principles",
+    videoUrl: "https://go.screenpal.com/player/cOhiFhntQvI",
     encouragementText:
       "Are you enjoying this so far? You are beginning to see how this works in real life.",
   },
   {
     id: "day-4",
     dayNumber: 4,
-    title: "Day Four: Career Paths in Cybersecurity",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day Four: Access Control and Cyber Security Basics",
+    videoUrl: "https://go.screenpal.com/player/cOhiFBntQav",
     encouragementText:
       "At this point, you should start asking yourself if you can see yourself doing this long term.",
   },
   {
     id: "day-5",
     dayNumber: 5,
-    title: "Day Five: How Beginners Get Started",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day Five: Intro to Cybersecurity Roles",
+    videoUrl: "https://go.screenpal.com/player/cOhjbfntlia",
     encouragementText:
       "This is where most people start dropping off. Stay with it. You are doing well.",
   },
   {
     id: "day-6",
     dayNumber: 6,
-    title: "Day Six: Protecting Yourself and Others Online",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    title: "Day Six: Intro to Cybersecurity Tools",
+    videoUrl: "https://go.screenpal.com/player/cOhQjcntIrI",
     encouragementText: "You are almost done. Not many people get here.",
   },
 ];
@@ -217,7 +217,7 @@ export default function CybersecurityPage() {
                   Day 7
                 </span>
                 <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mt-2">
-                  Your Next Steps in Cybersecurity
+                  Day Seven: Practical in Cybersecurity
                 </h2>
               </div>
 
@@ -227,10 +227,10 @@ export default function CybersecurityPage() {
                   <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Main Video</p>
                   <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                      title="Day 7 Main Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      src="https://go.screenpal.com/player/cOhQQxntITD"
+                      title="Day Seven: Practical in Cybersecurity"
                       allowFullScreen
+                      scrolling="no"
                       className="absolute top-0 left-0 w-full h-full border-0"
                     ></iframe>
                   </div>
@@ -241,10 +241,10 @@ export default function CybersecurityPage() {
                   <p className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">Bonus Video</p>
                   <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                      title="Day 7 Bonus Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      src="https://go.screenpal.com/player/cOhQQdntIT7"
+                      title="Next Steps in Cybersecurity"
                       allowFullScreen
+                      scrolling="no"
                       className="absolute top-0 left-0 w-full h-full border-0"
                     ></iframe>
                   </div>
@@ -302,10 +302,10 @@ export default function CybersecurityPage() {
               </p>
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted shadow-md">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://go.screenpal.com/player/cOhQQdntIT7"
                   title="A Gift From Us To You"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  scrolling="no"
                   className="absolute top-0 left-0 w-full h-full border-0"
                 ></iframe>
               </div>
