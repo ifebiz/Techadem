@@ -7,17 +7,17 @@ const testimonials = [
   {
     name: "Chinedu O.",
     role: "Data Analyst Student",
-    quote: "Techadem made learning Data Analysis so straightforward. The short videos were perfect for my busy schedule, and now I'm building my own dashboards!"
+    quote: "Learning Data Analysis was not as hard as I thought it would be, Techadem made the learning to be step by step and even help me with finding work afterwards."
   },
   {
     name: "Aisha M.",
     role: "Cybersecurity Student",
-    quote: "I always thought tech was too complex, but the beginner-friendly approach here changed my mindset. The community support is also amazing."
+    quote: "The Teachers are so helpful and encouraging, God bless you all."
   },
   {
     name: "Tunde B.",
     role: "Career Changer",
-    quote: "The quality of these lessons is incredible. I went from zero knowledge to understanding how to protect networks in just a few weeks."
+    quote: "In the beginning, I didn't really think the Tech thing was for me, but at the end of the day, Techadem showed me that it was all about taking things one step at a time."
   }
 ];
 
@@ -69,12 +69,12 @@ export default function HomePage() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-foreground tracking-tight leading-tight mb-6">
-                Learn Future-Proof <span className="text-primary relative whitespace-nowrap">
+                Learn <span className="text-primary relative whitespace-nowrap">
                   Tech Skills
                   <svg className="absolute -bottom-2 left-0 w-full h-3 text-accent/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                     <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
                   </svg>
-                </span> From Anywhere
+                </span> from anywhere
               </h1>
               <p className="text-lg md:text-xl text-foreground/70 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Beginner-friendly video lessons in Data Analysis and Cybersecurity designed to help you start your tech journey.
@@ -98,7 +98,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Why Learn With Techadem?</h2>
-            <p className="text-foreground/70 text-lg">We've stripped away the complexity to give you exactly what you need to succeed.</p>
+            <p className="text-foreground/70 text-lg">We've removed all the complexity and made it so much easier for you to succeed.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -126,12 +126,7 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">Loved by Beginner Learners</h2>
-            <p className="text-foreground/70 text-lg">Join hundreds of students taking their first steps in tech.</p>
-          </div>
-          
+        <div className="container mx-auto px-4 md:px-8">          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, i) => (
               <motion.div 

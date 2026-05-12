@@ -6,9 +6,9 @@ export function Footer() {
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <div className="overflow-hidden mb-4" style={{width: 180, height: 54}}>
-              <img src="/logo.png" alt="Techadem" className="w-full h-full object-contain" />
+          <div className="flex flex-col items-start">
+            <div className="mb-4" style={{width: 220, height: 66}}>
+              <img src="/logo.png" alt="Techadem" className="w-full h-full object-contain object-left" />
             </div>
             <p className="text-white/70 max-w-xs text-sm leading-relaxed">
               Beginner-friendly video lessons in Data Analysis and Cybersecurity designed to help you start your tech journey the right way.
@@ -32,7 +32,6 @@ export function Footer() {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-2 text-white/70 text-sm">
-              <li>support@techadem.com</li>
               <li>
                 <a
                   href="https://wa.me/2347055796976"
