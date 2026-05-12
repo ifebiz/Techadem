@@ -10,48 +10,48 @@ const days = [
   {
     id: "day-1",
     dayNumber: 1,
-    title: "What Cybersecurity Is and Why It Matters",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day One: What Cybersecurity Is and Why It Matters",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText:
       "Well done for completing Day 1. Most people never even start. You have taken the first step.",
   },
   {
     id: "day-2",
     dayNumber: 2,
-    title: "Common Security Threats and How They Work",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Two: Common Security Threats and How They Work",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText:
       "You are building momentum. Try not to skip days. Consistency is key.",
   },
   {
     id: "day-3",
     dayNumber: 3,
-    title: "Tools Used in Cybersecurity",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Three: Tools Used in Cybersecurity",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText:
       "Are you enjoying this so far? You are beginning to see how this works in real life.",
   },
   {
     id: "day-4",
     dayNumber: 4,
-    title: "Career Paths in Cybersecurity",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Four: Career Paths in Cybersecurity",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText:
       "At this point, you should start asking yourself if you can see yourself doing this long term.",
   },
   {
     id: "day-5",
     dayNumber: 5,
-    title: "How Beginners Get Started",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Five: How Beginners Get Started",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText:
       "This is where most people start dropping off. Stay with it. You are doing well.",
   },
   {
     id: "day-6",
     dayNumber: 6,
-    title: "Protecting Yourself and Others Online",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Six: Protecting Yourself and Others Online",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     encouragementText: "You are almost done. Not many people get here.",
   },
 ];
@@ -170,7 +170,7 @@ export default function CybersecurityPage() {
                   id={day.id}
                   dayNumber={day.dayNumber}
                   title={day.title}
-                  videoId={day.videoId}
+                  videoUrl={day.videoUrl}
                   encouragementText={day.encouragementText}
                   isLast={false}
                   onNextDay={() => {

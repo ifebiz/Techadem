@@ -13,48 +13,48 @@ const days = [
   {
     id: "day-1",
     dayNumber: 1,
-    title: "What Data Analysis Really Is",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day One: What Is Data Analysis",
+    videoUrl: "https://go.screenpal.com/player/cOhiIxntjCj",
     encouragementText:
       "Well done for completing Day 1. Most people never even start. You have taken the first step.",
   },
   {
     id: "day-2",
     dayNumber: 2,
-    title: "Tools Used by Data Analysts",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Two: The Tools of a Data Analyst",
+    videoUrl: "https://go.screenpal.com/player/cOhi2FntjsT",
     encouragementText:
       "You are building momentum. Try not to skip days. Consistency is key.",
   },
   {
     id: "day-3",
     dayNumber: 3,
-    title: "How Data is Cleaned and Interpreted",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Three: Data Handling",
+    videoUrl: "https://go.screenpal.com/player/cOhio6ntjWN",
     encouragementText:
       "Are you enjoying this so far? You are beginning to see how this works in real life.",
   },
   {
     id: "day-4",
     dayNumber: 4,
-    title: "How Beginners Start and Grow",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Four: Data Cleaning",
+    videoUrl: "https://go.screenpal.com/player/cOhi6RntjFD",
     encouragementText:
       "At this point, you should start asking yourself if you can see yourself doing this long term.",
   },
   {
     id: "day-5",
     dayNumber: 5,
-    title: "Career Paths and Opportunities",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Five: Basic Data Analysis",
+    videoUrl: "https://go.screenpal.com/player/cOhilKntj4o",
     encouragementText:
       "This is where most people start dropping off. Stay with it. You are doing well.",
   },
   {
     id: "day-6",
     dayNumber: 6,
-    title: "Building Your First Reports",
-    videoId: "dQw4w9WgXcQ",
+    title: "Day Six: Simple Data Visualization",
+    videoUrl: "https://go.screenpal.com/player/cOhiokntQhc",
     encouragementText: "You are almost done. Not many people get here.",
   },
 ];
@@ -173,7 +173,7 @@ export default function DataAnalysisPage() {
                   id={day.id}
                   dayNumber={day.dayNumber}
                   title={day.title}
-                  videoId={day.videoId}
+                  videoUrl={day.videoUrl}
                   encouragementText={day.encouragementText}
                   isLast={false}
                   onNextDay={() => {
@@ -220,7 +220,7 @@ export default function DataAnalysisPage() {
                   Day 7
                 </span>
                 <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mt-2">
-                  Putting It All Together
+                  Day Seven: Putting It Together
                 </h2>
               </div>
 
@@ -230,10 +230,10 @@ export default function DataAnalysisPage() {
                   <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Main Video</p>
                   <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                      title="Day 7 Main Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      src="https://go.screenpal.com/player/cOhiDYntQX8"
+                      title="Day Seven: Putting It Together"
                       allowFullScreen
+                      scrolling="no"
                       className="absolute top-0 left-0 w-full h-full border-0"
                     ></iframe>
                   </div>
@@ -244,10 +244,10 @@ export default function DataAnalysisPage() {
                   <p className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">Bonus Video</p>
                   <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
                     <iframe
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                      title="Day 7 Bonus Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      src="https://go.screenpal.com/player/cOhjlGntXOR"
+                      title="Day Seven: Your Next Steps in Data Analysis"
                       allowFullScreen
+                      scrolling="no"
                       className="absolute top-0 left-0 w-full h-full border-0"
                     ></iframe>
                   </div>
@@ -305,10 +305,10 @@ export default function DataAnalysisPage() {
               </p>
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted shadow-md">
                 <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://go.screenpal.com/player/cOhjlGntXOR"
                   title="A Gift From Us To You"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  scrolling="no"
                   className="absolute top-0 left-0 w-full h-full border-0"
                 ></iframe>
               </div>

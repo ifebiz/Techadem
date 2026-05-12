@@ -5,7 +5,7 @@ interface VideoLessonProps {
   id: string;
   dayNumber: number;
   title: string;
-  videoId: string;
+  videoUrl: string;
   encouragementText: string;
   onNextDay?: () => void;
   isLast?: boolean;
@@ -16,7 +16,7 @@ export function VideoLesson({
   id,
   dayNumber,
   title,
-  videoId,
+  videoUrl,
   encouragementText,
   onNextDay,
   isLast,
@@ -48,10 +48,10 @@ export function VideoLesson({
       <div className="p-6 md:p-8">
         <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted mb-6">
           <iframe
-            src={`https://www.youtube.com/embed/${videoId}`}
+            src={videoUrl}
             title={title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            scrolling="no"
             className="absolute top-0 left-0 w-full h-full border-0"
           ></iframe>
         </div>
