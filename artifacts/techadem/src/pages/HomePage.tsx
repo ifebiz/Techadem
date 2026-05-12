@@ -126,7 +126,10 @@ export default function HomePage() {
 
       {/* Testimonials Section */}
       <section className="py-24 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-8">          
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">What Our Students Say</h2>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, i) => (
               <motion.div 
