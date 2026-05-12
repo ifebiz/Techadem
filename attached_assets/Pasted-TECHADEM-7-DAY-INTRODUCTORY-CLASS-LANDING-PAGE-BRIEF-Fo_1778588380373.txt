@@ -1,0 +1,103 @@
+TECHADEM 
+7-DAY INTRODUCTORY CLASS LANDING PAGE BRIEF 
+(For Data Analysis and Cybersecurity) 
+This applies to two separate landing pages: 
+1. Techadem 7-Day Data Analysis Introductory Class 2. Techadem 7-Day Cybersecurity Introductory Class 
+1. OVERALL GOAL OF THE PAGE 
+This is not just a video hosting page. 
+This page should: 
+● make them feel like they are in a structured experience ● keep them watching till the end ● build confidence ● position Techadem as authority ● transition them into paid enrollment 
+2. PAGE STRUCTURE (VERY IMPORTANT) 
+SECTION 1: HERO SECTION 
+Title: 
+Techadem 7-Day Data Analysis Introductory Class Techadem 7-Day Cybersecurity Introductory Class 
+Subtext: 
+Learn the fundamentals; test your interest; and understand how to start your journey in tech the right way. 
+Highlight: 
+You stand a chance of winning a laptop when you join our 7days Challenge 
+Keep this visible and clear. 
+ 
+SECTION 2: WHAT YOU WILL LEARN 
+Short bullet points. Keep it simple. 
+Example for Data Analysis: 
+● Understanding what Data Analysis really is ● Tools used by Data Analysts ● How data is cleaned and interpreted ● How beginners start and grow ● Career paths and opportunities 
+Example for Cybersecurity: 
+● What Cybersecurity is and why it matters ● Common security threats and how they work ● Tools used in cybersecurity ● Career paths in cybersecurity ● How beginners get started 
+ 
+SECTION 3: WHY THIS CLASS MATTERS 
+This class helps you understand if this path is right for you; before you invest time and money into learning fully. 
+You are testing your interest and your consistency. 
+SECTION 4: VIDEO FLOW (CORE EXPERIENCE) 
+This is the most important part. 
+Each day should feel like progress. 
+DAY 1 
+● Title of Video ● Embedded video 
+After video text: 
+Well done for completing Day 1. Most people never even start. You have taken the first step. 
+ 
+DAY 2 
+● Title ● Video 
+After text: 
+You are building momentum. Try not to skip days. Consistency is key. 
+ 
+DAY 3 
+● Title ● Video 
+After text: 
+So far, are you enjoying this? You are beginning to see how this works in real life. 
+ 
+DAY 4 
+● Title ● Video 
+After text: 
+At this point, you should start asking yourself if you can see yourself doing this long term. 
+ 
+DAY 5 
+● Title ● Video 
+After text: 
+This is where most people start dropping off. Stay with it. You are doing well. 
+ 
+DAY 6 
+● Title ● Video 
+After text: 
+You are almost done. Not many people get here. 
+ 
+DAY 7 (2 VIDEOS) 
+Video 1 
+● Title ● Video 
+Bonus video 
+● Title ● Video 
+After both: 
+You have completed the 7-Day Introductory Class. 
+ 
+SECTION 5: COMPLETION MESSAGE 
+Write: 
+You made it this far. 
+This already puts you ahead of 93% of people who start and never finish. You should be proud of yourself 
+You have shown signs of consistency; focus; and willingness to learn. 
+It is safe to say you can start your journey in Data Analysis or Cybersecurity 
+SECTION 6: BONUS / GIFT VIDEO 
+Title: 
+A Gift From Us To You 
+● Final video embedded 
+Short text: 
+This video will guide you on what to do next and how to move forward properly. 
+SECTION 7: COURSE TRANSITION (SALES SECTION) 
+Keep it clean and natural. 
+Write: 
+At this point, you are no longer starting from scratch. 
+You already understand the basics. 
+If you decide to go deeper, you will be learning with structure, guidance, and real direction. 
+SECTION 8: DISCOUNT MESSAGE 
+Write: 
+Because you completed this class, you are eligible for a 30% discount on our full course. 
+SECTION 9: CTA 
+Button text: 
+Enroll Now 
+Action: 
+● Takes them to WhatsApp DM 
+Add WhatsApp icon floating on the page as well. 
+3. DESIGN INSTRUCTIONS 
+Tell the landing page designer: 
+● Use Techadem brand colors ● Use clean white background ● Keep spacing wide and readable ● Mobile-first design is critical ● Videos must load smoothly ● Keep sections clearly separated ● No clutter ● No heavy animations 
+4. TONE & COPY RULES 
+Very important: 
+● No exclamation marks ● No dashes ● No overhyped English ● No AI sounding phrases ● Keep it natural ● Keep it simple ● Nigerian tone ● Professional but human

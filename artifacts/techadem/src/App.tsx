@@ -9,6 +9,7 @@ import DataAnalysisPage from "@/pages/DataAnalysisPage";
 import CybersecurityPage from "@/pages/CybersecurityPage";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ function App() {
             </main>
             <Footer />
           </div>
+          <FloatingWhatsApp />
         </WouterRouter>
         <Toaster />
       </TooltipProvider>
