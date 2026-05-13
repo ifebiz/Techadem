@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const testimonials = [
   {
@@ -48,6 +49,7 @@ const features = [
 ];
 
 export default function HomePage() {
+  usePageTitle("Techadem — Learn Tech Skills That Get You Hired");
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}

@@ -4,6 +4,7 @@ import { VideoLesson } from "@/components/VideoLesson";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ReminderModal } from "@/components/ReminderModal";
 import { useProgress } from "@/hooks/useProgress";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const COURSE_KEY = "data-analysis";
 const WA_LINK = "https://wa.me/2349044399437";
@@ -65,6 +66,7 @@ const scrollTo = (id: string) => {
 };
 
 export default function DataAnalysisPage() {
+  usePageTitle("Data Analysis Course — Techadem");
   const { completedDays, markDayComplete, progressPercent, isDayComplete } =
     useProgress(COURSE_KEY);
   const [showDay7Reminder, setShowDay7Reminder] = useState(false);
