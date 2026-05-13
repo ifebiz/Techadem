@@ -1,8 +1,7 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WA_LINK =
-  "https://wa.me/2347055796976?text=Hello%20Techadem%2C%20I%20just%20completed%20some%20lessons%20and%20I%27d%20like%20to%20learn%20more.";
+const WA_LINK = "https://wa.me/2349044399437";
 
 export function FloatingWhatsApp() {
   return (

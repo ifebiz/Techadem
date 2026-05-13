@@ -3,11 +3,8 @@ import { motion } from "framer-motion";
 import { VideoLesson } from "@/components/VideoLesson";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
-const WA_LINK =
-  "https://wa.me/2347055796976?text=Hello%20Techadem%2C%20I%20just%20completed%20some%20lessons%20and%20I%27d%20like%20to%20learn%20more.";
-
-const WA_ENROLL =
-  "https://wa.me/2347055796976?text=Hello%20Techadem%2C%20I%20have%20completed%20the%207-Day%20Data%20Analysis%20class%20and%20I%20want%20to%20enroll%20in%20the%20full%20course.";
+const WA_LINK = "https://wa.me/2349044399437";
+const WA_ENROLL = "https://wa.me/2349044399437";
 
 const days = [
   {
@@ -225,32 +222,14 @@ export default function DataAnalysisPage() {
               </div>
 
               <div className="p-6 md:p-8 space-y-8">
-                {/* Video 1 */}
-                <div>
-                  <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">Main Video</p>
-                  <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
-                    <iframe
-                      src="https://go.screenpal.com/player/cOhiDYntQX8"
-                      title="Day Seven: Putting It Together"
-                      allowFullScreen
-                      scrolling="no"
-                      className="absolute top-0 left-0 w-full h-full border-0"
-                    ></iframe>
-                  </div>
-                </div>
-
-                {/* Bonus Video */}
-                <div>
-                  <p className="text-xs font-semibold text-accent uppercase tracking-widest mb-3">Bonus Video</p>
-                  <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
-                    <iframe
-                      src="https://go.screenpal.com/player/cOhjlGntXOR"
-                      title="Day Seven: Your Next Steps in Data Analysis"
-                      allowFullScreen
-                      scrolling="no"
-                      className="absolute top-0 left-0 w-full h-full border-0"
-                    ></iframe>
-                  </div>
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
+                  <iframe
+                    src="https://go.screenpal.com/player/cOhiDYntQX8"
+                    title="Day Seven: Putting It Together"
+                    allowFullScreen
+                    scrolling="no"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                  ></iframe>
                 </div>
 
                 <p className="text-base text-foreground/75 leading-relaxed">
