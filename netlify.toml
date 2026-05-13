@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g pnpm && pnpm install && pnpm --filter @workspace/techadem run build"
+  command = "corepack enable && pnpm install && pnpm --filter @workspace/techadem run build"
   publish = "artifacts/techadem/dist/public"
 
 [[redirects]]
