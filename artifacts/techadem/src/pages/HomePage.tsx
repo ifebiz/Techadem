@@ -5,19 +5,14 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const testimonials = [
   {
-    name: "Chinedu O.",
-    role: "Data Analyst Student",
-    quote: "Learning Data Analysis was not as hard as I thought it would be, Techadem made the learning to be step by step and even help me with finding work afterwards."
+    name: "Adeola Rhoda",
+    role: "",
+    quote: "One thing that stood out to me is the weekend class structure. As a 9–5 worker, this made it possible for me to consistently learn and develop a valuable tech skill without disrupting my work schedule. That level of flexibility is something I deeply appreciate.\n\nAdditionally, the value provided compared to the cost is impressive. The training goes beyond theory and focuses on practical, real-world application, which has significantly improved my confidence and ability to apply what I've learned.\n\nThank you for creating such a thoughtful and impactful learning experience."
   },
   {
-    name: "Aisha M.",
-    role: "Cybersecurity Student",
-    quote: "The Teachers are so helpful and encouraging, God bless you all."
-  },
-  {
-    name: "Tunde B.",
-    role: "Career Changer",
-    quote: "In the beginning, I didn't really think the Tech thing was for me, but at the end of the day, Techadem showed me that it was all about taking things one step at a time."
+    name: "Nwokedi Ijeoma",
+    role: "",
+    quote: "At the beginning, some of the tools felt a bit challenging, but the tutor made things much easier to understand. She was patient, supportive, and always ready to break things down in a simple way.\n\nToday, I feel more confident in my ability to analyze data and work on real projects. I'm really glad I took this step with Techadem, and I would recommend it to anyone looking to start a career in data analysis."
   }
 ];
 
@@ -130,7 +125,7 @@ export default function HomePage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">What Our Students Say</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {testimonials.map((testimonial, i) => (
               <motion.div 
                 key={i}
@@ -143,12 +138,13 @@ export default function HomePage() {
                 <svg className="absolute top-6 right-6 w-8 h-8 text-primary/10" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
-                <p className="text-foreground/80 leading-relaxed mb-6 relative z-10 font-medium">
-                  "{testimonial.quote}"
-                </p>
+                <div className="text-foreground/80 leading-relaxed mb-6 relative z-10 font-medium space-y-3">
+                  {testimonial.quote.split("\n\n").map((para, j) => (
+                    <p key={j}>"{para}"</p>
+                  ))}
+                </div>
                 <div>
                   <h4 className="font-display font-bold text-foreground">{testimonial.name}</h4>
-                  <span className="text-sm text-primary font-medium">{testimonial.role}</span>
                 </div>
               </motion.div>
             ))}
