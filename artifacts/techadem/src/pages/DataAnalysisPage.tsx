@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { VideoLesson } from "@/components/VideoLesson";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ReminderModal } from "@/components/ReminderModal";
+import { useProgress } from "@/hooks/useProgress";
 
+const COURSE_KEY = "data-analysis";
 const WA_LINK = "https://wa.me/2349044399437";
 const WA_ENROLL = "https://wa.me/2349044399437";
 
@@ -62,6 +65,15 @@ const scrollTo = (id: string) => {
 };
 
 export default function DataAnalysisPage() {
+  const { completedDays, markDayComplete, progressPercent, isDayComplete } =
+    useProgress(COURSE_KEY);
+  const [showDay7Reminder, setShowDay7Reminder] = useState(false);
+
+  const handleComplete = (dayNumber: number, nextId: string) => {
+    markDayComplete(dayNumber);
+    setTimeout(() => scrollTo(nextId), 150);
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
 
@@ -159,9 +171,29 @@ export default function DataAnalysisPage() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-10">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-6">
               Your 7-Day Journey
             </h2>
+
+            {/* Progress Bar */}
+            <div className="mb-10 bg-card rounded-2xl border p-5 shadow-sm">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-sm font-semibold text-foreground/70">Your Progress</span>
+                <span className="text-sm font-bold text-primary">{progressPercent}%</span>
+              </div>
+              <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
+                <motion.div
+                  className="h-full bg-primary rounded-full"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${progressPercent}%` }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                />
+              </div>
+              <p className="text-xs text-foreground/45 mt-2">
+                {completedDays.length} of 7 days complete
+                {progressPercent === 100 && " — Well done for finishing the full 7-Day Class."}
+              </p>
+            </div>
 
             {/* Days 1 to 6 */}
             {days.map((day, index) => (
@@ -172,11 +204,16 @@ export default function DataAnalysisPage() {
                   title={day.title}
                   videoUrl={day.videoUrl}
                   encouragementText={day.encouragementText}
+                  isComplete={isDayComplete(day.dayNumber)}
+                  onComplete={() =>
+                    handleComplete(
+                      day.dayNumber,
+                      index < days.length - 1 ? days[index + 1].id : "day-7"
+                    )
+                  }
+                  courseKey={COURSE_KEY}
+                  showReminder={true}
                   isLast={false}
-                  onNextDay={() => {
-                    const nextId = index < days.length - 1 ? days[index + 1].id : "day-7";
-                    scrollTo(nextId);
-                  }}
                 />
 
                 {/* WhatsApp prompt after Day 5 */}
@@ -186,7 +223,6 @@ export default function DataAnalysisPage() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     className="bg-card border-l-4 border-[#25D366] rounded-r-xl p-6 md:p-8 mb-12 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
-                    data-testid="whatsapp-cta-day5"
                   >
                     <div>
                       <h3 className="text-lg font-display font-bold text-foreground mb-1">
@@ -202,7 +238,7 @@ export default function DataAnalysisPage() {
               </React.Fragment>
             ))}
 
-            {/* Day 7: Two videos in one section */}
+            {/* Day 7 */}
             <motion.div
               id="day-7"
               initial={{ opacity: 0, y: 20 }}
@@ -213,15 +249,25 @@ export default function DataAnalysisPage() {
               data-testid="video-lesson-7"
             >
               <div className="p-6 md:p-8 border-b bg-primary/5">
-                <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary text-primary-foreground font-bold text-xs tracking-wide">
-                  Day 7
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-primary text-primary-foreground font-bold text-xs tracking-wide">
+                    Day 7
+                  </span>
+                  {isDayComplete(7) && (
+                    <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                      Complete
+                    </span>
+                  )}
+                </div>
                 <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mt-2">
                   Day Seven: Putting It Together
                 </h2>
               </div>
 
-              <div className="p-6 md:p-8 space-y-8">
+              <div className="p-6 md:p-8 space-y-6">
                 <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-muted">
                   <iframe
                     src="https://go.screenpal.com/player/cOhiDYntQX8"
@@ -235,6 +281,18 @@ export default function DataAnalysisPage() {
                 <p className="text-base text-foreground/75 leading-relaxed">
                   You have completed the 7-Day Introductory Class.
                 </p>
+
+                {!isDayComplete(7) && (
+                  <button
+                    onClick={() => markDayComplete(7)}
+                    className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-xl shadow-sm transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Mark Day 7 as Complete
+                  </button>
+                )}
               </div>
             </motion.div>
 
@@ -266,7 +324,7 @@ export default function DataAnalysisPage() {
         </div>
       </section>
 
-      {/* SECTION 6: Bonus / Gift Video */}
+      {/* SECTION 6: Gift Video */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
           <div className="max-w-3xl mx-auto">
